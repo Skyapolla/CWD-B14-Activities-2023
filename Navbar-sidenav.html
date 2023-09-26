@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/0ce3215a6f.js" crossorigin="anonymous"></script>
+    <!--Fontawesome cndjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar & Sidenav</title>
+</head>
+<!--navbar fixed and drop down menu-->
+<body>
+    <div class="navbar-fixed">
+        <nav class="deep-purple darken-4 nav-extended">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="" class="brand-logo" target="_blank"><i class="fa-solid fa-g"></i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="h" target="_blank"  class="blue-text text-darken-4">button1</a>
+                            </li>
+                            <li><a href="" target="_blank"  class="blue-text text-darken-4">button2</a>
+                            </li>
+                            <li><a href="" target="_blank"  class="blue-text text-darken-4">button3</a>
+                            </li>
+                            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="fa-solid fa-arrow-down red-text"></i></a></li>
+                            
+                        </ul>
+                </div>
+                <!--drop down structure-->
+                <ul class="dropdown-content" id="dropdown1">
+                    <li class=""><a href="#test1">test1</a>
+                    </li>
+                    <li class=""><a href="#test2">test2</a>
+                    </li>
+                    <li class=""><a href="#test3">test3</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#test1">test1</a>
+                        </li>
+                        <li class="tab"><a href="#test2">test2</a>
+                        </li>
+                        <li class="tab"><a href="#test3">test3</a>
+                        </li>
+
+                    </ul>
+                </div>    
+                
+            </div>
+        </nav>
+    </div>
+    <h1 class="orange-text lighten-2 center">Navbar</h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+        <!--Right Alighed links-->
+        <h3 class="orange-text text-lighten-2">Right Aligned Links</h3>
+            <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+        
+        <nav class="orange lighten-4">
+            <div class="container">
+                <div class="nav nav-wrapper">
+                    <a href="https://cdnjs.com/libraries/font-awesome" class="brand-logo" target="_blank"><i class="fa-brands fa-facebook class blue-text text-darken-4"></i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="https://cdnjs.com/about" target="_blank"  class="blue-text text-darken-4">button1</a>
+                        </li>
+                        <li><a href="https://cdnjs.com/libraries" target="_blank"  class="blue-text text-darken-4">button2</a>
+                        </li>
+                        <li><a href="https://cdnjs.com/api" target="_blank"  class="blue-text text-darken-4">button3</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+        <br><br>
+        <!--left alight links-->
+        <h3 class="orange-text text-lighten-2">Left Aligned Links</h3>
+            <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>   
+        <nav class="green lighten-4">
+            <div class="container">
+                <div class="nav nav-wrapper">
+                    <a href="https://cdnjs.com/libraries/font-awesome" class="brand-logo right" target="_blank">
+                    <i class="fa-brands fa-tiktok green-text text-darken-1">
+                    </i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://cdnjs.com/about" target="_blank"  class="blue-text text-darken-4">button1</a>
+                        </li>
+                        <li><a href="https://cdnjs.com/libraries" target="_blank"  class="blue-text text-darken-4">button2</a>
+                        </li>
+                        <li><a href="https://cdnjs.com/api" target="_blank"  class="blue-text text-darken-4">button3</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        </nav> 
+        <br><br>
+        <!--Centering Logo-->
+        <h3 class="orange-text text-lighten-2">Centering the logo</h3>
+        
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your a class brand-logo>. You will have to make sure yourself that links do not overlap if you use this</p>
+
+        <nav class="blue lighten-4">
+            <div class="container">
+                <div class="nav nav-wrapper">
+                    <a href="https://cdnjs.com/libraries/font-awesome" class="brand-logo center" target="_blank"><i class="fa-brands fa-paypal blue-text text-darken-1"></i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="https://cdnjs.com/about" target="_blank"  class="blue-text text-darken-4">button1</a>
+                        </li>
+                        <li><a href="https://cdnjs.com/libraries" target="_blank"  class="blue-text text-darken-4">button2</a>
+                        </li>
+                        <li><a href="https://cdnjs.com/api" target="_blank"  class="blue-text text-darken-4">button3</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        </nav> 
+        <br><br>
+        <!--Active Items-->
+        <h3 class="orange-text text-lighten-2">Active Items</h3>
+        <p>Add active class to your li tags to denote the current page.</p>
+        <nav class="grey lighten-2">
+            <div class="container">
+                <div class="nav nav-wrapper">
+                    <a href="https://cdnjs.com/libraries/font-awesome" class="brand-logo" target="_blank"><i class="fa-brands fa-youtube red-text"></i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active"><a href="https://cdnjs.com/about" target="_blank"  class="blue-text text-darken-4">button1</a>
+                        </li>
+                        <li class="active"><a href="https://cdnjs.com/libraries" target="_blank"  class="blue-text text-darken-4">button2</a>
+                        </li>
+                        <li class="active"><a href="https://cdnjs.com/api" target="_blank"  class="blue-text text-darken-4">button3</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+        <br><br>
+        <!--Extended Navbar-->
+        <h3 class="orange-text text-lighten-2">Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+        <!--Navbar Extended-->
+        <nav class="pink lighten-4 nav-extended">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="" class="brand-logo" target="_blank"><i class="fa-solid fa-g"></i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="h" target="_blank"  class="blue-text text-darken-4">button1</a>
+                            </li>
+                            <li><a href="" target="_blank"  class="blue-text text-darken-4">button2</a>
+                            </li>
+                            <li><a href="" target="_blank"  class="blue-text text-darken-4">button3</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#test1">test1</a>
+                        </li>
+                        <li class="tab"><a href="#test2">test2</a>
+                        </li>
+                        <li class="tab"><a href="#test3">test3</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+        <!--Sidenav structure--> 
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="">SASS</a></li>
+                <li><a href="">HOme</a></li>
+                <li><a href="">Practice</a></li>
+
+            </ul>
+            <!--tab structure-->
+                <div class="row">
+                    <div class="col s12" id="test1">
+                        <div class="card-image"><img src="Images/img5.jpg" alt="" class="responsive-img"></div>
+                    </div>    
+                    <div class="col s12" id="test2">
+                        <div class="card-image"><img src="Images/img2.jpg" alt="" class="responsive-img"></div>
+                    </div>    
+                    <div class="col s12" id="test3">
+                        <div class="card-image"><img src="Images/img3.jpg" alt="" class="responsive-img"></div>
+                    </div> 
+        <br><br><br>
+        <!--fixed navbar-->
+        
+        <!--navbar dropdown menu-->
+        <h3 class="orange-text text-lighten-2">Navbar Dropdown Menu</h3>
+            <p>To add a navbar dropdown menu, add the ul dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the data-target attribute of the dropdown trigger.</p>
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">one</a></li>
+                <li><a href="#!">two</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">three</a></li>
+            </ul>
+            <nav class="black lighten-1">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo" target="_blank"><i class="fa-brands fa-ideal red-text text-darken-1"></i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="https://cdnjs.com/about" target="_blank"  class="red-text text-darken-4">button1</a>
+                            </li>
+                            <li><a href="https://cdnjs.com/libraries" target="_blank"  class="red-text text-darken-4">button2</a>
+                            </li>
+                            <li><a href="https://cdnjs.com/api" target="_blank"  class="red-text text-darken-4">button3</a>
+                            </li>
+                            <!--dropdown trigger-->
+                            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="fa-solid fa-arrow-down red-text"></i></a></li>
+                        </ul>
+                    </div>    
+                </div>
+            </nav>
+            <!--Icon links-->
+            <h3 class="orange-text text-lighten-2">Icon links</h3>
+            <p>You can add icons into links. For icon only links you don't need any additional class. Just pop the i tag in and it will work.</p>
+            <br><br>
+            <nav class="green lighten-4">
+                <div class="container">
+                    <div class="nav nav-wrapper">
+                        <a href="https://cdnjs.com/libraries/font-awesome" class="brand-logo" target="_blank"><i class="fa-brands fa-microsoft blue-text text-darken-1"></i>></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="https://cdnjs.com/about" target="_blank"  class="blue-text text-darken-4"><i class="fa-solid fa-clipboard"></i></a>
+                            </li>
+                            <li><a href="https://cdnjs.com/libraries" target="_blank"  class="blue-text text-darken-4"><i class="fa-solid fa-cloud"></i></a>
+                            </li>
+                            <li><a href="https://cdnjs.com/api" target="_blank"  class="blue-text text-darken-4"><i class="fa-regular fa-face-smile"></i></a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </nav>
+            <!--LOGO-->
+            <h3 class="orange-text text-lighten-2">Logo</h3>
+            <p>For adding an icon to a text link you need to add either a left or right class to the icon depending on where you want the icon to be.</p>
+            <br><br>
+            <nav class="brown lighten-4">
+                <div class="container">
+                    <div class="nav nav-wrapper">
+                        <a href="https://cdnjs.com/libraries/font-awesome" class="brand-logo" target="_blank"><i class="fa-regular fa-pen-to-square"></i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="https://cdnjs.com/about" target="_blank"  class="blue-text text-darken-4"><i class="fa-solid fa-clipboard"></i>OPEN</a>
+                            </li>
+                            <li><a href="https://cdnjs.com/libraries" target="_blank"  class="blue-text text-darken-4"><i class="fa-solid fa-cloud"></i>CLOSE</a>
+                            </li>
+                            <li><a href="https://cdnjs.com/api" target="_blank"  class="blue-text text-darken-4"><i class="fa-regular fa-face-smile"></i>OFF</a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </nav>
+            <!--Icon links-->
+            <h3 class="orange-text text-lighten-2">Icon links</h3>
+            <p>You can add icons into links. For icon only links you don't need any additional class. Just pop the i tag in and it will work.</p>
+            <br><br>
+            <nav class="green lighten-4">
+                <div class="container">
+                    <div class="nav nav-wrapper">
+                        <a href="https://cdnjs.com/libraries/font-awesome" class="brand-logo" target="_blank"><i class="fa-brands fa-microsoft blue-text text-darken-1"></i>></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="https://cdnjs.com/about" target="_blank"  class="blue-text text-darken-4"><i class="fa-solid fa-clipboard"></i></a>
+                            </li>
+                            <li><a href="https://cdnjs.com/libraries" target="_blank"  class="blue-text text-darken-4"><i class="fa-solid fa-cloud"></i></a>
+                            </li>
+                            <li><a href="https://cdnjs.com/api" target="_blank"  class="blue-text text-darken-4"><i class="fa-regular fa-face-smile"></i></a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </nav>
+            
+            <!--Button-->
+            <h3 class="orange-text text-lighten-2">buttons</h3>
+            <p>You can add buttons into links. For buttons you don't need any additional class. Just pop the .btn class on the a tag..</p>
+            <br><br>
+            <nav class="pink lighten-4">
+                <div class="container">
+                    <div class="nav nav-wrapper">
+                        <a href="https://cdnjs.com/libraries/font-awesome" class="brand-logo" target="_blank"><i class="fa-solid fa-video"></i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="https://cdnjs.com/about" target="_blank"  class="blue-text text-darken-4 waves-effect waves-light btn"></i>OPEN
+                        </a>
+                            </li>
+                            <li><a href="https://cdnjs.com/libraries" target="_blank"  class="blue-text text-darken-4 waves-effect waves-light btn">CLOSE</a>
+                            </li>
+                            <li><a href="https://cdnjs.com/api" target="_blank"  class="blue-text text-darken-4 waves-effect waves-light btn-large">OFF</a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </nav>
+        <!--Mobile Collapse Button-->
+            <h3 class="orange-text text-lighten-2">Mobile Collapse Button</h3>
+            <p>When your nav bar is resized, you will see that the links on the right turn into a hamburger icon menu. Take a look at the example below to get this functionality. Add the entire sidenav-trigger line to your nav.</p>
+            <br><br>
+            
+            <nav class="nav-wrapper blue">
+                <div class="container">
+                <a href="#" class="brand-logo">HOME</a>
+                    <a href="#" data-target="mobile-phone" class="sidenav-trigger">Menu</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="blue"><a href="#">Home</a></li>
+                        <li ><a href="#">START</a></li>
+                        <li><a href="#">BACK</a></li>   
+                    </ul>
+                </div>
+
+            </nav>
+        <ul class="sidenav" id="mobile-phone">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">START</a></li>
+            <li><a href="#">BACK</a></li>
+        </ul>
+        
+        <!--Halfway FAB in Extended Navbar-->
+        <h3 class="orange-text text-lighten-2">Halfway FAB in Extended Navbar</h3>
+        <p>You can add buttons into links. For buttons you don't need any additional class. Just pop the .btn class on the a tag.</p>
+        <br><br>
+        
+        <nav class="nav-extended blue lighten-1">
+            
+                <div class="nav-wrapper">
+                    <a href="https://cdnjs.com/libraries/font-awesome" class="brand-logo"
+                    ><i class="fa-brands fa-microsoft red-text text-darken-1"></i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a>LINK</a></li>
+                            <li><a>LINK2</a></li>
+                            <li><a>Link3</a></li>
+                        </ul>
+                </div>
+                <div class="nav-content">
+                    <span class="nav-title">Title</span>
+                    <a class="btn-large halfway-fab waves-effect waves-light teal right">
+                        <i class="material-icons">add</i>
+                    </a>
+                </div>
+            
+        </nav>
+
+        <br><br>
+        <!--Search Bar-->
+        <h3 class="orange-text text-lighten-2">Search Bar</h3>
+            <p>You can add a search form in the navbar.</p>   
+        
+            <nav class="green lighten-4">
+                <div class="nav nav-wrapper">   
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                                <label class="label-icon" for="search"><i class="fa-solid fa-magnifying-glass"></i></i>
+                                </label>
+                                <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+
+
+
+
+        
+
+
+    <div style="height: 2000px"></div>
+    </div>    
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        //Tabs
+        $(document).ready(function() {
+            $('.tabs').tabs();
+        });
+    
+        //DROPDOWN MENU
+    
+        $(document).ready(function() {
+            $(".dropdown-trigger").dropdown({
+                hover: false
+            });
+        })   
+    
+        //Side Nav
+    
+         $(document).ready(function(){
+        $('.sidenav').sidenav({
+            edge: 'right',
+            dragable: true,
+        });
+  });
+    </script>
+   
+
+</body>
+</html>    

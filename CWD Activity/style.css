@@ -1,0 +1,71 @@
+
+h1, h2, h3, h4, h5, h6, p { 
+    font-weight: 200;
+    
+}
+
+.stock-link {
+    font-weight: 120;
+    font-size: 13px;
+}
+
+.adobe-stock {
+    position: sticky;
+    top: 0px;
+}
+
+
+.stock-link-small {
+    font-weight: 120px;
+    font-size: 10px;
+    margin-left: 8px;
+
+}
+
+.stock-img {
+    margin: 20px 0px 10px;
+
+
+}
+
+.Shelter-stock {
+    margin: 10px 50px 10px;
+    font-family: 'lucida'
+}
+
+.button1 {
+    position: relative;
+    left: 50px;
+
+}
+
+.list1 {
+    list-style-type: disc;
+    position: relative;
+    left: 10px;
+}
+
+.blink {
+    text-align: center;   
+    animation: blink 2s linear infinite;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: .5;
+    }
+}
+
+.paws2 {
+    position: relative;
+    top: 100px;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+
+}
